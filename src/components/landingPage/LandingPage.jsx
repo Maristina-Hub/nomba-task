@@ -348,8 +348,8 @@ const LandingPage = () => {
         <div>
           <div>
             <div className="md:h-[658px] xl:w-[654px] lg:w-[480px] h-[400px] mt-10 lg:mt-0 lg:absolute clip-path-imgpolygon px-[25px]  ">
-              <div className=" w-full h-full">
-                <div className="block max-w-[5472px]">
+              <div className=" w-full h-full  ">
+                <div className="block max-w-[5472px]  ">
                   <img
                     alt="po"
                     role="presentation"
@@ -368,7 +368,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="md:max-w-[1280px] ml-[48px] ">
-        <div className="bg-black md:pt-[74px] pt-[55px] lg:my-[180px] my-[90px] max-h-[780px] md:max-h-[1010px] lg:max-h-[700px] overflow-hidden">
+        <div className="bg-black md:pt-[74px] pt-[55px] lg:my-[180px] my-[90px] max-h-[780px] md:max-h-[1010px] lg:max-h-[700px] overflow-hidden mt-[320px] ">
           <h3 className="md:text-[40px] text-[32px] md:leading-[47.87px] leading-[39.4px] font-semibold md:max-w-[635px] max-w-[325px] mx-auto text-center md:mb-[40px] text-[#ffffff]  ">
             The Smartest Way to Accept Offline and Online Payments
           </h3>
