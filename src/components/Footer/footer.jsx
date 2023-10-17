@@ -1,7 +1,7 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="text-white bg-[black] md:h-[1065px]  h-[1450px] ">
+    <div className="footer-body">
       <div className="relative ">
         <svg
           className="absolute hidden md:block lg:-top-10 xl:-top-0  "
@@ -18,20 +18,20 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div className="  mt-[100px] text-white  p-[30px]">
-        <div className="footer-nav">
-          <h2 className="text-white font-bold md:text-[48px] tracking-[-0.03em] text-[32px] md:leading-[59.04px] leading-[40.2px] md:tracking-[-0.04em] lg:flex gap-2 justify-center text-center min-w-max lg:mt-0">
-            Get a free <span className="text-[#ffcc00]">Nomba</span>{" "}
+      <div className="  mt-[100px] text-white p-[30px]">
+        <div className="footer-nav mt-20">
+          <h2 className="footer-header ">
+            Get a free <span className="text-primary">Nomba</span>{" "}
             <br className="block md:hidden" />
             account
           </h2>
-          <h5 className=" text-white  md:text-[21px] text-[14px] md:leading-[30.5px] leading-[19.6px] font-semibold w-[240px] md:w-[350px] lg:w-auto mx-auto normal-case  pt-3 lg:pt-4 text-center  ">
+          <h5 className=" footer-h5">
             Change how you spend, manage and save money
           </h5>
         </div>
-        <div className="flex lg:justify-center justify-between lg:gap-6 gap-5 mt-8 mb-4 lg:mb-0 text-white appstore ">
-          <a
-            className="flex items-center justify-center gap-[10px] text-primary-100 lg:text-[18px] text-[15px] py-3 lg:py-4 lg:w-[174px] w-[147px] rounded-[26px] bg-[#202024] "
+        <div className="appstore ">
+          <Link
+            className=" appstore-link"
             href="https://play.google.com/store/apps/details?id=ai.kudi.agent&amp;hl=en&amp;gl=US"
             target="_blank"
             rel="noreferrer"
@@ -114,9 +114,9 @@ const Footer = () => {
               </defs>
             </svg>{" "}
             Google Play
-          </a>
-          <a
-            className="flex items-center justify-center gap-[10px] text-primary-100 lg:text-[18px] text-[15px] py-3 lg:py-4 lg:w-[174px] w-[147px] rounded-[26px] bg-[#202024]"
+          </Link>
+          <Link
+            className="appstore-link"
             href="https://apps.apple.com/ng/app/nomba/id1625708506"
             target="_blank"
             rel="noreferrer"
@@ -136,196 +136,152 @@ const Footer = () => {
               ></path>
             </svg>{" "}
             App Store
-          </a>
+          </Link>
         </div>
-        <div className="footer-list mt-6">
+        <div className=" mt-6">
           <nav className="grid md:grid-cols-4 grid-cols-2 gap-8 p-[25px] ">
             <div>
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px] text-[#ffffff49] ">
-                Products
-              </p>
+              <p className="footer-list-top ">Products</p>
               <ul>
                 <li className="mt-2">
-                  <a href="/products/accept-payments">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white">
-                      Accept payments
-                    </div>
-                  </a>
+                  <Link href="/products/accept-payments">
+                    <div className="footer-list">Accept payments</div>
+                  </Link>
                 </li>
                 <li className="mt-2">
-                  <a href="/products/make-payments">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Make Payments
-                    </div>
-                  </a>
+                  <Link href="/products/make-payments">
+                    <div className="footer-list">Make Payments</div>
+                  </Link>
                 </li>
                 <li className="mt-2">
-                  <a href="/products/pos-terminals">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      POS Terminals
-                    </div>
-                  </a>
+                 <Link href="/products/pos-terminals">
+                    <div className="footer-list ">POS Terminals</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a href="/invoice">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white">
-                      Invoice
-                    </div>
-                  </a>
+                 <Link href="/invoice">
+                    <div className="footer-list">Invoice</div>
+                 </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px] text-[#ffffff49] ">
-                Nomba
-              </p>
+              <p className="footer-list-top ">Nomba</p>
               <ul>
                 <li className="mt-2">
-                  <a aria-current="page" className="" href="/about-us">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      About us
-                    </div>
-                  </a>
+                 <Link aria-current="page" className="" href="/about-us">
+                    <div className="footer-list">About us</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a
+                 <Link
                     href="https://medium.com/@nombastories"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Blog
-                    </div>
-                  </a>
+                    <div className="footer-list ">Blog</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a
+                 <Link
                     href="https://nomba.talentlyft.com/#home"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Work with Nomba
-                    </div>
-                  </a>
+                    <div className="footer-list ">Work with Nomba</div>
+                 </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px] text-[#ffffff49] ">
-                Business Types
-              </p>
+              <p className="footer-list-top ">Business Types</p>
               <ul>
                 <li className="mt-2">
-                  <a href="/business/small">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Small Business
-                    </div>
-                  </a>
+                 <Link href="/business/small">
+                    <div className="footer-list">Small Business</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a href="/business/large">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Large Business
-                    </div>
-                  </a>
+                 <Link href="/business/large">
+                    <div className="footer-list ">Large Business</div>
+                 </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px] text-[#ffffff49] ">
-                Contact us
-              </p>
+              <p className="footer-list-top">Contact us</p>
               <ul>
                 <li className="mt-2">
-                  <a href="tel:+23401888866" target="_blank" rel="noreferrer">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white">
-                      018888866
-                    </div>
-                  </a>
+                 <Link href="tel:+23401888866" target="_blank" rel="noreferrer">
+                    <div className="footer-list">018888866</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a href="tel:+234015200061" target="_blank" rel="noreferrer">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      015200061
-                    </div>
-                  </a>
+                 <Link href="tel:+234015200061" target="_blank" rel="noreferrer">
+                    <div className="footer-list">015200061</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a href="tel:+234018885008" target="_blank" rel="noreferrer">
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white">
-                      018885008
-                    </div>
-                  </a>
+                 <Link href="tel:+234018885008" target="_blank" rel="noreferrer">
+                    <div className="footer-list">018885008</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a
+                 <Link
                     href="mailto:support@nomba.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      support@nomba.com
-                    </div>
-                  </a>
+                    <div className="footer-list ">support@nomba.com</div>
+                 </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px] text-[#ffffff49]">
-                Follow us
-              </p>
+              <p className="footer-list-top">Follow us</p>
               <ul>
                 <li className="mt-2">
-                  <a
+                 <Link
                     href="https://www.instagram.com/nombahq/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Instagram
-                    </div>
-                  </a>
+                    <div className="footer-list ">Instagram</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a
+                 <Link
                     href="https://twitter.com/nomba"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Twitter
-                    </div>
-                  </a>
+                    <div className="footer-list">Twitter</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a
+                 <Link
                     href="https://www.youtube.com/c/Nombahq"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white ">
-                      Youtube
-                    </div>
-                  </a>
+                    <div className="footer-list ">Youtube</div>
+                 </Link>
                 </li>
                 <li className="mt-2">
-                  <a
+                 <Link
                     href="https://www.facebook.com/nombahq"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-[14px] leading-[22px] md:text-[16px] md:leading-[24px] font-normal text-white">
-                      Facebook
-                    </div>
-                  </a>
+                    <div className="footer-list">Facebook</div>
+                 </Link>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
-        <div className="flex flex-col md:items-start mt-[40px] md:text-right footer-logo p-[25px] ">
-          <a href="/">
+        <div className="footer-privacy">
+         <Link href="/">
             <svg
               className="md:w-[174px] w-[144px]"
               width="174"
@@ -338,34 +294,31 @@ const Footer = () => {
                 fill="white"
               ></path>
             </svg>
-          </a>
+         </Link>
           <ul className="flex flex-row justify-start md:mt-6 mt-4 text-white ">
-            <li className="md:ml-8 ml-4 first:ml-0">
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px] text-white ">
-                <a href="/privacy-policy">Privacy Policy</a>
+            <li className="footer-privacy-li">
+              <p className="footer-privacy-p  ">
+               <Link href="/privacy-policy">Privacy Policy</Link>
               </p>
             </li>
-            <li className="md:ml-8 ml-4 first:ml-0">
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px] text-white">
-                <a href="/terms-of-service">Terms of Service</a>
+            <li className="footer-privacy-li">
+              <p className="footer-privacy-p ">
+               <Link href="/terms-of-service">Terms of Service</Link>
               </p>
             </li>
-            <li className="md:ml-8 ml-4 first:ml-0">
-              <p className="md:text-[16px] text-[14px] md:leading-[28.8px] leading-[25.2px text-white">
-                <a href="/ims">Integrated Management System</a>
+            <li className="footer-privacy-li">
+              <p className="footer-privacy-p ">
+               <Link href="/ims">Integrated Management System</Link>
               </p>
             </li>
           </ul>
         </div>
-        <div className="md:flex justify-between pt-6 mt-7 border-t-[0.5px] border-n-grey3 mb-5 footer-address text-white p-[25px] ">
-          <div className="grid md:grid-cols-2 max-w-[1000px] gap-4">
+        <div className="address-container">
+          <div className="footer-address">
             <div className="flex flex-col ">
               <div className=" ">
-                <p className="md:text-[14px] text-[12px] md:leading-[25.2px] leading-[21.6px] text-white  flex gap-2">
-                  <div
-                    data-gatsby-image-wrapper=""
-                    className="gatsby-image-wrapper gatsby-image-wrapper-constrained w-[20px] h-[20px]"
-                  >
+                <p className="footer-address-p flex gap-2">
+                  <div className="w-[20px] h-[20px]">
                     <img
                       aria-hidden="true"
                       data-placeholder-image=""
@@ -405,17 +358,17 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-col">
-                <p className="md:text-[14px] text-[12px] md:leading-[25.2px] leading-[21.6px] text-white ">
+                <p className="footer-address-p  ">
                   16 Billings Way Oregun Ikeja, Lagos, Nigeria
                 </p>
-                <p className="md:text-[14px] text-[12px] md:leading-[25.2px] leading-[21.6px] text-white ">
+                <p className="footer-address-p  ">
                   19b Bosun Adekoya Street, Lekki Phase 1, Lagos, Nigeria
                 </p>
               </div>
             </div>
             <div className="flex flex-col">
               <div>
-                <p className="md:text-[14px] text-[12px] md:leading-[25.2px] leading-[21.6px] text-white  flex gap-2 ">
+                <p className="footer-address-p   flex gap-2 ">
                   <div
                     data-gatsby-image-wrapper=""
                     className="gatsby-image-wrapper gatsby-image-wrapper-constrained w-[20px] h-[20px]"
@@ -459,30 +412,30 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-col">
-                <p className="md:text-[14px] text-[12px] md:leading-[25.2px] leading-[21.6px] text-white ">
+                <p className="footer-address-p  ">
                   580 California St, 12th Floor, San Francisco, CA 94104
                 </p>
               </div>
             </div>
           </div>
-          <p className="md:text-[14px] text-[12px] md:leading-[25.2px] leading-[21.6px] md:mt-0 mt-16 text-white ">
+          <p className="footer-address-p md:mt-0 mt-16 ">
             © 2023 Nomba, all rights reserved
           </p>
         </div>
         <div className="relative">
-        <svg
-          className="absolute hidden md:block -right-5 bottom-[-3.5rem] "
-          width="165"
-          height="548"
-          viewBox="0 0 165 548"
-          fill="none"
-        >
-          <path
-            d="M1 163.511V55.6842L238.963 189.441V135.6L473 1V110.863L238.963 245.464L473 381.519V489.2L238.963 353.144V407.052L1 546.484V434.939L238.963 297.366L1 163.511Z"
-            stroke="#FFCC00"
-            stroke-opacity="0.5"
-          ></path>  
-        </svg>
+          <svg
+            className="absolute hidden md:block -right-5 bottom-[-3.5rem] "
+            width="165"
+            height="548"
+            viewBox="0 0 165 548"
+            fill="none"
+          >
+            <path
+              d="M1 163.511V55.6842L238.963 189.441V135.6L473 1V110.863L238.963 245.464L473 381.519V489.2L238.963 353.144V407.052L1 546.484V434.939L238.963 297.366L1 163.511Z"
+              stroke="#FFCC00"
+              stroke-opacity="0.5"
+            ></path>
+          </svg>
         </div>
       </div>
     </div>

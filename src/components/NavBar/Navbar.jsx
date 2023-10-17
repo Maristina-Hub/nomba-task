@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -99,24 +101,24 @@ const Navbar = () => {
             </div>
             <ul className="sign-in">
               <li className="mb-[17px] lg:mb-0  ">
-                <a
+                <Link
                   className="text-[14px] leading-[22px] font-[500] "
                   href="https://dashboard.nomba.com/auth/login"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Sign in
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="account transition duration-400    "
                   href="https://dashboard.nomba.com/auth/sign-up-new"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <span class="block">Open an account</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </ul>
