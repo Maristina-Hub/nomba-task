@@ -3,8 +3,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className=" body">
-      <div className="  flex justify-start w-[900px] gap-[100px] ">
+    <div className=" nav-body   ">
+      <div className="items-center  flex justify-start w-[900px] gap-[100px] ">
         <div className="flex  logo">
           <svg
             className="w-[94px] h-[41px]"
@@ -19,7 +19,7 @@ const Navbar = () => {
             ></path>
           </svg>
         </div>
-        <div className="flex ">
+        <div className="flex items-center">
           <ul className="list">
             <div className="product  ">
               <div className="dropdown">

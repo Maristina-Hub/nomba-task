@@ -19,8 +19,8 @@
         font-family: "Inter-Regular", sans-serif;
       }
 
-    .body {
-        @apply   text-[#03045E]  flex  justify-between px-[25px] py-[12.5px] ;
+    .nav-body {
+        @apply   text-[#03045E]  flex  justify-between px-[25px] py-[12.5px] sticky top-0 left-0 w-full z-[1] bg-white ;
         /* font-family: "Rubik-Regular"; */
       }
       .list {

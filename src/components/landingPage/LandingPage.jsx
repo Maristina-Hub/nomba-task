@@ -200,22 +200,21 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="py-[60px] lg:py-[150px] ">
-        <div className="md:max-w-[1335px] px-[25px] md:mx-auto undefined border-red border-2 ">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-[40px]  border-green border-2 ">
-            <div className="col-span-1 border-red border-2  ">
-              <h3 className="md:text-[40px] text-[32px] md:leading-[47.87px] leading-[39.4px] font-semibold text-[#121212]">
+        <div className="md:max-w-[1335px] px-[25px] md:mx-auto undefined  ">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-[40px]  ">
+            <div className="col-span-1  ">
+              <h3 className="md:text-[40px] text-[32px] md:leading-[47.87px] leading-[39.4px]  font-semibold text-[#121212]">
                 We've been with you, at every stage of your business
               </h3>
-              <p className="md:text-[18px] text-[16px] md:leading-[32.8px] leading-[28.8px] mt-4 text-[#121212]">
+              <p className="md:text-[18px] text-[16px] md:leading-[32.8px] leading-[28.8px] mt-4 text-[#121212] ">
                 Have a great look at what we've achieved together
               </p>
             </div>
-            <div className=" flex justify-between border-2 border-black w-[800px]">
+            <div className=" grid grid-cols-3  justify-between  w-[800px] ">
               <img
                 src={img2}
                 alt="Kudi Terminal"
-                className="w-[211.15px] h-[349.28px] block static 
-              bg-cover opacity-[1]"
+                className="w-[211.15px] h-[320px] block static bg-cover opacity-[1] skew-y-[12deg] ml-[35px] shadow-2xl"
                 aria-hidden
               />
 
@@ -224,11 +223,11 @@ const LandingPage = () => {
                 alt="man"
                 className="w-[281px] h-[347.06px] block static"
               />
-              <img
-                src={img3}
-                alt="man"
+              {/* <img
+                src=''
+                alt=""
                 className="w-[281px] h-[347.06px] block static"
-              />
+              /> */}
             </div>
           </div>
         </div>
