@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: local("Inter Regular"),
+      url("./components/font/Inter/Inter-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Inter-Bold";
+    src: local("Inter Bold"),
+      url("./components/font/Inter/Inter-Bold.ttf") format("truetype");
+  }
+
+@layer components {
+    * {
+        @apply text-black;
+        font-family: "Inter-Regular", sans-serif;
+      }
+
+    .body {
+        @apply   text-[#03045E]  flex  justify-between px-[25px] py-[12.5px] ;
+        /* font-family: "Rubik-Regular"; */
+      }
+      .list {
+        @apply flex justify-between w-[417px]  
+      }
+      .product {
+        @apply  relative hover:visible ;
+        
+      }
+      .dropdown {
+        @apply   absolute z-[1]  mt-[40px] h-[200px] w-[350px] p-[25px]  hidden ;
+        
+      }
+        
+    .icon-bg {
+      @apply rounded-full bg-[#FFFAF0] w-[50px] h-[50px] p-3  ;
+      
+    }
+    .dropdown-item {
+        @apply flex flex-col justify-around   ;
+        
+      }
+    .items {
+        @apply flex  justify-between w-[300px] px-[10px]   ;
+        
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
