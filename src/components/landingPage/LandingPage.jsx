@@ -9,7 +9,7 @@ import phone from "../img/phone.webp";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="w-[100%] overflow-x-hidden ">
       <Navbar />
       <div className="xl:pt-[60px] lg:pt-[120px] sm:pt-[70px]  grid xl:grid-cols-2 gap-[40px] mb-[-50px] px-[25px] ">
         <div className="">
