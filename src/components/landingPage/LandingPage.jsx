@@ -11,9 +11,9 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="xl:pt-[60px] lg:pt-[120px] sm:pt-[160px] pt-[120px] grid xl:grid-cols-2 gap-[40px] mb-[-50px] px-[25px]">
-        <div>
-          <h1 className="md:text-[65px] text-[37px] md:leading-[75px] leading-[44.4px] font-bold md:max-w-[655px] font-[inter-bold] ">
+      <div className="xl:pt-[60px] lg:pt-[120px] sm:pt-[70px]  grid xl:grid-cols-2 gap-[40px] mb-[-50px] px-[25px] ">
+        <div className="">
+          <h1 className="md:text-[65px] text-[37px] md:leading-[75px] leading-[44.4px] font-bold md:max-w-[655px] font-[inter-bold]   ">
             Improving payment experience for businesses
           </h1>
           <p className="md:text-[18px] text-[16px] md:leading-[32.8px] leading-[28.8px] md:max-w-[330px] my-6">
@@ -223,11 +223,7 @@ const LandingPage = () => {
                 alt="man"
                 className="w-[281px] h-[347.06px] block static"
               />
-              {/* <img
-                src=''
-                alt=""
-                className="w-[281px] h-[347.06px] block static"
-              /> */}
+              
             </div>
           </div>
         </div>

@@ -23,9 +23,9 @@
         @apply   text-[#03045E]  flex  justify-between px-[25px] py-[12.5px] sticky top-0 left-0 w-full z-[1] bg-white ;
         /* font-family: "Rubik-Regular"; */
       }
-      .list {
-        @apply flex justify-between w-[417px]  
-      }
+      /* .list {
+        @apply w-[1000px]  
+      } */
       .product {
         @apply  relative hover:visible ;
         

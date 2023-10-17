@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className=" nav-body   ">
-      <div className="items-center  flex justify-start w-[900px] gap-[100px] ">
+      
+      <div className="items-center flex justify-between w-full  ">
         <div className="flex  logo">
           <svg
             className="w-[94px] h-[41px]"
@@ -18,10 +20,15 @@ const Navbar = () => {
               fill="#121212"
             ></path>
           </svg>
+          <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-4 cursor-pointer md:hidden ">
+            <ion-icon name={open ? "close" : "menu"} ></ion-icon>
+          </div>
         </div>
-        <div className="flex items-center">
-          <ul className="list">
-            <div className="product  ">
+        <div className="md:flex md:items-center md:justify-between grid  grid-flow-col ">
+        <ul className={`list md:flex justify-between  h-[100vh] md:h-[auto]  absolute md:static bg-white md:z-auto z-[-1] left-0 md:w-[1130px] w-full mx-[24px] transition-all duration-500 ease-in ${open ? 'top-[4rem] opacity-100' : 'top-[-490px]'} md:opacity-100 opacity-0`}>
+
+           <div className="list-container md:p-0 md:m-0 p-3 m-6 grid  md:flex  w-[380px] md:justify-between md:h-auto h-[200px] md:gap-[10px] items-center">
+           <div className="product ">
               <div className="dropdown">
                 <ul className="dropdown-item ">
                   <li className="items ">
@@ -84,14 +91,11 @@ const Navbar = () => {
             <div className="">
               <li>Company</li>
             </div>
-          </ul>
-        </div>
-      </div>
-
-      <ul class="flex flex-col lg:flex-row mt-[74px] lg:mt-0 lg:mb-0 px-[25px] lg:px-0 md:mb-0 gap-[30px] mb-10 items-center menu-button-wrap">
-        <li class="mb-[17px] lg:mb-0">
+           </div>
+            <ul className="flex flex-start flex-col lg:flex-row md:mt-[74px] lg:mt-0 lg:mb-0 md:px-[25px]  py-[10px] md:py-0 lg:px-0 md:mb-0 md:gap-[30px] mb-10 mx-[30px] md:items-center  items-start  ">
+        <li className="mb-[17px] lg:mb-0 ">
           <a
-            class="text-[14px] leading-[22px] font-[500] "
+            className="text-[14px] leading-[22px] font-[500] "
             href="https://dashboard.nomba.com/auth/login"
             target="_blank"
             rel="noreferrer"
@@ -110,7 +114,17 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+
+          </ul>
+         
+        </div>
+       
+    
+     
+      
+      </div>
     </div>
+    
   );
 };
 
