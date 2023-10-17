@@ -3,89 +3,69 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Inter-Regular";
-    src: local("Inter Regular"),
-      url("./components/font/Inter/Inter-Regular.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Inter-Bold";
-    src: local("Inter Bold"),
-      url("./components/font/Inter/Inter-Bold.ttf") format("truetype");
-  }
+  font-family: "Inter-Regular";
+  src: local("Inter Regular"),
+    url("./components/font/Inter/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter Bold"),
+    url("./components/font/Inter/Inter-Bold.ttf") format("truetype");
+}
 
 @layer components {
-    * {
-        @apply text-black;
-        font-family: "Inter-Regular", sans-serif;
-      }
+  * {
+    @apply text-black;
+    font-family: "Inter-Regular", sans-serif;
+  }
 
-    .nav-body {
-        @apply   text-[#03045E]  flex  justify-between px-[25px] py-[12.5px] sticky top-0 left-0 w-full z-[1] bg-white ;
-        /* font-family: "Rubik-Regular"; */
-      }
-      /* .list {
-        @apply w-[1000px]  
-      } */
-      .product {
-        @apply  relative hover:visible ;
-        
-      }
-      .dropdown {
-        @apply   absolute z-[1]  mt-[40px] h-[200px] w-[350px] p-[25px]  hidden ;
-        
-      }
-        
-    .icon-bg {
-      @apply rounded-full bg-[#FFFAF0] w-[50px] h-[50px] p-3  ;
-      
-    }
-    .dropdown-item {
-        @apply flex flex-col justify-around   ;
-        
-      }
-    .items {
-        @apply flex  justify-between w-[300px] px-[10px]   ;
-        
-      }
-    
+  .nav {
+    @apply text-[#03045E]  flex  justify-between px-[25px] py-[12.5px] sticky top-0 left-0 w-full z-[1] bg-white;
+  }
 
+  .nav-body {
+    @apply items-center flex justify-between w-full  mt-3;
+  }
+  .burger {
+    @apply text-3xl absolute right-8 top-8 cursor-pointer md:hidden;
+  }
 
+  .list-body {
+    @apply md:flex md:items-center md:justify-between grid  grid-flow-col;
+  }
 
+  .list {
+    @apply md:flex justify-between  h-[100vh] md:h-[auto]  absolute md:static bg-white md:z-auto z-[-1] left-0 md:w-[1130px] w-full mx-[24px] transition-all duration-500 ease-in;
+  }
 
+  .list-container {
+    @apply md:p-0 md:m-0 p-3 m-6 grid  md:flex  w-[380px] md:justify-between md:h-auto h-[200px] md:gap-[10px] items-center;
+  }
 
+  .product {
+    @apply relative hover:visible;
+  }
+  .dropdown {
+    @apply absolute z-[1]  mt-[40px] h-[200px] w-[350px] p-[25px]  hidden;
+  }
 
+  .icon-bg {
+    @apply rounded-full bg-[#FFFAF0] w-[50px] h-[50px] p-3;
+  }
 
+  .dropdown-item {
+    @apply flex flex-col justify-around;
+  }
 
+  .items {
+    @apply flex  justify-between w-[300px] px-[10px];
+  }
 
+  .sign-in {
+    @apply flex flex-col lg:flex-row md:mt-[74px] lg:mt-0 lg:mb-0 md:px-[25px] py-[10px] md:py-0 lg:px-0 md:mb-0 md:gap-[30px] mb-10 mx-[30px] md:items-center items-start;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .account {
+    @apply rounded text-center gap-2 font-semibold text-[16px] inline-flex items-center justify-center  disabled:cursor-not-allowed md:min-w-[166px] h-[45px] min-w-[100%] bg-primary hover:bg-primary/80 md:font-[500] md:text-[14px];
+  }
 }

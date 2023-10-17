@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className=" nav-body   ">
-      
-      <div className="items-center flex justify-between w-full  ">
-        <div className="flex  logo">
+    <div className=" nav">
+      <div className="nav-body ">
+        <div className="flex ">
           <svg
             className="w-[94px] h-[41px]"
             width="174"
@@ -20,111 +18,111 @@ const Navbar = () => {
               fill="#121212"
             ></path>
           </svg>
-          <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-4 cursor-pointer md:hidden ">
-            <ion-icon name={open ? "close" : "menu"} ></ion-icon>
+          
+          <div
+            onClick={() => setOpen(!open)}
+            className=" burger"
+          >
+            <ion-icon name={open ? "close" : "menu"}></ion-icon>
           </div>
         </div>
-        <div className="md:flex md:items-center md:justify-between grid  grid-flow-col ">
-        <ul className={`list md:flex justify-between  h-[100vh] md:h-[auto]  absolute md:static bg-white md:z-auto z-[-1] left-0 md:w-[1130px] w-full mx-[24px] transition-all duration-500 ease-in ${open ? 'top-[4rem] opacity-100' : 'top-[-490px]'} md:opacity-100 opacity-0`}>
-
-           <div className="list-container md:p-0 md:m-0 p-3 m-6 grid  md:flex  w-[380px] md:justify-between md:h-auto h-[200px] md:gap-[10px] items-center">
-           <div className="product ">
-              <div className="dropdown">
-                <ul className="dropdown-item ">
-                  <li className="items ">
-                    <span className="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        className="icon-bg "
-                      >
-                        <path
-                          d="M18 15V9H6M18 15H22V5H6V9M18 15V19H2V9H6M10 16C11.1 16 12 15.1 12 14C12 12.9 11.1 12 10 12C8.9 12 8 12.9 8 14C8 15.1 8.9 16 10 16Z"
-                          stroke="#111111"
-                          stroke-miterlimit="10"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                    </span>{" "}
-                    <div className="list-bg">
-                      {" "}
-                      <h5 className="list-bg">Payments</h5>
-                      <p className="text-[12px] list-bg">
-                        Accept and make payments on Nomba
-                      </p>
-                    </div>
-                  </li>
-                  <li className="items ">
-                    <span className="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        className="icon-bg"
-                      >
-                        <path
-                          d="M2 22H22M4 12V18M12 12V18M20 12V18M2 8H22L12 2L2 8Z"
-                          stroke="#121212"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                    </span>
-                    <div className="list-bg">
-                      <p className="list-bg">Banking</p>
-                      <p className="text-[12px] list-bg">
-                        Access the financial tools you need
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+        <div className="list-body ">
+          <ul
+            className={` list ${
+              open ? "top-[4rem] opacity-100" : "top-[-490px]"
+            } md:opacity-100 opacity-0`}
+          >
+            <div className="list-container ">
+              <div className="product ">
+                <div className="dropdown">
+                  <ul className="dropdown-item ">
+                    <li className="items ">
+                      <span className="">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          className="icon-bg "
+                        >
+                          <path
+                            d="M18 15V9H6M18 15H22V5H6V9M18 15V19H2V9H6M10 16C11.1 16 12 15.1 12 14C12 12.9 11.1 12 10 12C8.9 12 8 12.9 8 14C8 15.1 8.9 16 10 16Z"
+                            stroke="#111111"
+                            stroke-miterlimit="10"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </span>{" "}
+                      <div className="list-bg">
+                        {" "}
+                        <h5 className="list-bg">Payments</h5>
+                        <p className="text-[12px] list-bg">
+                          Accept and make payments on Nomba
+                        </p>
+                      </div>
+                    </li>
+                    <li className="items ">
+                      <span className="">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          className="icon-bg"
+                        >
+                          <path
+                            d="M2 22H22M4 12V18M12 12V18M20 12V18M2 8H22L12 2L2 8Z"
+                            stroke="#121212"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div className="list-bg">
+                        <p className="list-bg">Banking</p>
+                        <p className="text-[12px] list-bg">
+                          Access the financial tools you need
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <li className="">Products</li>
               </div>
-              <li className="">Products</li>
+              <div className="">
+                <li>Buisness Types</li>
+              </div>
+              <div className="">
+                <li>Company</li>
+              </div>
             </div>
-            <div className="">
-              <li>Buisness Types</li>
-            </div>
-            <div className="">
-              <li>Company</li>
-            </div>
-           </div>
-            <ul className="flex flex-start flex-col lg:flex-row md:mt-[74px] lg:mt-0 lg:mb-0 md:px-[25px]  py-[10px] md:py-0 lg:px-0 md:mb-0 md:gap-[30px] mb-10 mx-[30px] md:items-center  items-start  ">
-        <li className="mb-[17px] lg:mb-0 ">
-          <a
-            className="text-[14px] leading-[22px] font-[500] "
-            href="https://dashboard.nomba.com/auth/login"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Sign in
-          </a>
-        </li>
-        <li>
-          <a
-            class="rounded text-center gap-2 font-semibold text-[16px] transition duration-400 inline-flex items-center justify-center disabled:cursor-not-allowed md:min-w-[166px] h-[45px] min-w-[100%] bg-primary hover:bg-primary/80 disabled:bg-secondary md:!font-[500] md:!text-[14px]"
-            href="https://dashboard.nomba.com/auth/sign-up-new"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="block">Open an account</span>
-          </a>
-        </li>
-      </ul>
-
+            <ul className="sign-in">
+              <li className="mb-[17px] lg:mb-0  ">
+                <a
+                  className="text-[14px] leading-[22px] font-[500] "
+                  href="https://dashboard.nomba.com/auth/login"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Sign in
+                </a>
+              </li>
+              <li>
+                <a
+                  className="account transition duration-400    "
+                  href="https://dashboard.nomba.com/auth/sign-up-new"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="block">Open an account</span>
+                </a>
+              </li>
+            </ul>
           </ul>
-         
         </div>
-       
-    
-     
-      
       </div>
     </div>
-    
   );
 };
 
