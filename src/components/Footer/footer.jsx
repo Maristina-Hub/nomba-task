@@ -1,10 +1,10 @@
 // import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="text-white bg-[black] md:h-[1160px] border-2 border-black  h-[1450px] ">
-      <div className="">
+    <div className="text-white bg-[black] md:h-[1065px]  h-[1450px] ">
+      <div className="relative ">
         <svg
-          className="absolute hidden md:block xl:-top-3  top-0 "
+          className="absolute hidden md:block lg:-top-10 xl:-top-0  "
           width="240"
           height="249"
           viewBox="0 0 262 249"
@@ -469,8 +469,9 @@ const Footer = () => {
             © 2023 Nomba, all rights reserved
           </p>
         </div>
+        <div className="relative">
         <svg
-          className="absolute hidden md:block -right-0 bottom-[-545px] border-2 border-red"
+          className="absolute hidden md:block -right-5 bottom-[-3.5rem] "
           width="165"
           height="548"
           viewBox="0 0 165 548"
@@ -482,6 +483,7 @@ const Footer = () => {
             stroke-opacity="0.5"
           ></path>  
         </svg>
+        </div>
       </div>
     </div>
   );
