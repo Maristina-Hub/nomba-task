@@ -35,7 +35,7 @@ const LandingPage = () => {
       </div>
       <div className="bg-black px-8 md:px-16 py-20 lg:py-40 overflow-hidden relative">
         <svg
-          className="absolute top-[0px] md:-left-[369px] -left-[380px] lg:-left-[200px]  border-2 border-red"
+          className="absolute top-[0px] md:-left-[369px] -left-[380px] lg:-left-[200px]"
           width="577"
           height="319"
           viewBox="0 0 577 319"
