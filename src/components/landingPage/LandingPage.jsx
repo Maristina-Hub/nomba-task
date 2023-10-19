@@ -29,13 +29,13 @@ const LandingPage = () => {
             <span className="block">Get Started</span>
           </a>
         </div>
-        <div className="">
-          <img src={img1} alt="experience" />
+        <div className="overflow-visible z-40 ">
+          <img src={img1} alt="experience" className="rounded-lg"/>
         </div>
       </div>
       <div className="bg-black px-8 md:px-16 py-20 lg:py-40 overflow-hidden relative">
         <svg
-          className="absolute top-[0px] -left-[369px] lg:-left-[200px]"
+          className="absolute top-[0px] md:-left-[369px] -left-[380px] lg:-left-[200px]  border-2 border-red"
           width="577"
           height="319"
           viewBox="0 0 577 319"
@@ -47,7 +47,7 @@ const LandingPage = () => {
           ></path>
         </svg>
         <svg
-          className="absolute -top-10 -left-[36px] xl:-left-[60px]"
+          className="absolute -top-10 -left-[36px] xl:-left-[60px]  "
           width="81"
           height="479"
           viewBox="0 0 81 479"
@@ -59,7 +59,7 @@ const LandingPage = () => {
           ></path>
         </svg>
         <svg
-          className="absolute bottom-[0px] -right-[480px]"
+          className="absolute bottom-[0px] md:-right-[480px] -right-[545px]  "
           width="1169"
           height="531"
           viewBox="0 0 1169 531"
