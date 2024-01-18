@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className=" nav">
+    <div className="nav">
       <div className="nav-body ">
-        <div className="flex ">
+        <div className="flex">
           <svg
             className="w-[94px] h-[41px]"
             width="174"

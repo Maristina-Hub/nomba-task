@@ -29,7 +29,7 @@ const LandingPage = () => {
             <span className="block">Get Started</span>
           </a>
         </div>
-        <div className="overflow-visible z-40 ">
+        <div className="overflow-visible z-10 ">
           <img src={img1} alt="experience" className="rounded-lg"/>
         </div>
       </div>

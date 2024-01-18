@@ -27,15 +27,15 @@
     @apply items-center flex justify-between w-full  mt-3;
   }
   .burger {
-    @apply text-3xl absolute right-8 top-8 cursor-pointer md:hidden;
+    @apply text-3xl absolute right-8 top-8 cursor-pointer md:hidden ;
   }
 
   .list-body {
-    @apply md:flex md:items-center md:justify-between grid  grid-flow-col;
+    @apply md:flex md:items-center md:justify-between grid grid-flow-col;
   }
 
   .list {
-    @apply md:flex justify-between  h-[100vh] md:h-[auto]  absolute md:static bg-white md:z-auto z-[-1] left-0 md:w-[1130px] w-full mx-[24px] transition-all duration-500 ease-in;
+    @apply md:flex justify-between  h-[700%] md:h-full absolute md:static bg-red md:z-auto z-[-50] left-0 md:w-[1130px] w-full mx-[24px] transition-all duration-500 ease-in  ;
   }
 
   .list-container {
